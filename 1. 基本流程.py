@@ -1,8 +1,7 @@
 import tensorflow as tf
-
 #创建两个常量op
-n1=tf.constant([3,3])
-n2=tf.constant([2],[3])
+n1=tf.constant([[3,3]])
+n2=tf.constant([[2],[3]])
 #创建一个矩阵乘法op, 把m1和m2传入
 product=tf.matmul(n1,n2)
 print(product)  #得到一个Tensor类型
